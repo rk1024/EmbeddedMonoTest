@@ -29,6 +29,10 @@ namespace EmbeddedApp {
       Console.WriteLine("Testing internal calls with struct marshalling: GetMyStruct().x = " + (s = GetMyStruct()).x);
 
       Console.WriteLine("Testing internal calls with two-way struct marshalling: IncrementMyStruct(s).x = " + IncrementMyStruct(s).x);
+
+      Console.WriteLine("Press any key to continue...");
+
+      Console.ReadKey(); //Wait for a keypress
     }
 
     [MethodImpl(MethodImplOptions.InternalCall)]
